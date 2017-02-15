@@ -1,0 +1,70 @@
+body {
+	background-image: url("neptune.jpg");
+	color: gray;
+}
+
+th {
+	font-size: 24px;
+}
+
+.author {
+	font-weight: normal;
+}
+
+p:first-of-type {
+	color: chartreuse;
+}
+
+p:nth-child(2){
+	color: gold;
+}
+
+.note {
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+.deceit{
+	display:none;
+}
+
+.textAlign {
+	text-align:right;
+}
+
+table {
+	border: 3px solid white;
+}
+
+td {
+	height: 100px;
+	border: 1px solid gray;
+	vertical-align: bottom;
+}
+
+.mono {
+    height: 100px;
+    border: 1px solid gray;
+    vertical-align: bottom;
+    font-family: monospace;
+}
+
+img.closingImage{
+	 margin: auto;
+	 display: block;
+	 width: 30%;
+ }
+
+  img.closingImage:hover{
+	 margin: auto;
+	 display: block;
+	 width: 50%;
+ }
+
+ a:link{
+	 text-decoration:none;
+	 color: blue;
+ }
+
+ a:visited{
+	color: green; 
+ }

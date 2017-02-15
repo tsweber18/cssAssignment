@@ -3,39 +3,53 @@
 <html lang="en-us">
 
 <head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css">
 	<title>Handcoded HTML Static Site</title>
 </head>
 <body>
 	<h1>HANDCODED HMTL STATIC SITE</h1>
-	<h2>By Tim Weber</h2>
+	<h2><span class = "author">By</span> Tim Weber</h2> <!-- CSS Font weight to make 'By' smaller than my name-->
 	<br/>
 	<br/>
 	<br/>
-	<table border = "1" width = "1000">
+	<div class = "tableContainer">
+	<table class = "table">
 		<tr>
-			<th>Unix Command</th>
+			<th>Unix Command</th> <!--Table Headers use CSS font-size to be larger-->
 			<th>Description</th>
 			<th>Example</th>
 		</tr>
 		<tr>
 			<td>ls</td>
 			<td>Lists all the files and subdirectories in the current directory</td>
-			<td><tt>$ls</tt></td>
+			<td class="mono">$ls</td>
 		</tr>
 		<tr>
 			<td>mkdir</td>
 			<td>This creates a new subdirectory in your current directory (makes a new folder)</td>
-			<td><tt>$mkdir newFolder</tt></td>
+			<td class="mono">$mkdir newFolder</td>
 		</tr>
 	
 	</table>
-	<p>You should note that the examples in my table are in monospace form.</p>
+	</div>
+	<p class = "textAlign"> I made it look janky so you could see the vertical-align:bottom.  This is way over here to show the text align, and it is colored by first-of-type.</p>
+	<p class = "note">You should note that the examples in my table are in monospace form and this is styled with font family.</p> <!--This is a classed p block to allow the font-family styling-->
 
-	<p>This is a p tag block with a <span style = "color:red">red span</span> inside of it and a
-	<a href="http://www.github.com/tsweber18">link</a> to my github. </p>
+	<p class = "linkBlock">This is a p tag block with a <span style = "color:red">red span</span> inside of it and a
+	<a href="http://www.github.com/tsweber18">link</a> to my github.   This link should change color after you visit it.</p>
 
-	<p> Thanks for visiting.  Here is a neat and spiffy picture for the final requirement.</p>
-	<img src="1dodgefinal.jpg">
+	<p> Thanks for visiting.  Here is a neat and spiffy picture for the final requirement. It gets bigger when you mouseOver it.</p>
+	<div class = "imageBlock"><img src="1dodgefinal.jpg" class = "closingImage" alt = "A neat picture"></div>
+	<div class = "children">
+	<p> First child and first of type p in this div.</p>
+	<p> Second child is painted gold by nth child.</p>
+	<p> Third child is normal.</p>
+	</div>
+	
+	
+	
+	<p class = "deceit"> This is a super secret section.  This is where I'm hiding information from you, the user.  Muhahahaha!</p> <!--CSS Display to hide this text-->
 
 </body>
 </html>
